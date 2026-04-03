@@ -18,6 +18,15 @@ export type TaskAction =
 | { type: 'TOGGLE_TODO', payload: number }
 | { type: 'DELETE_TODO', payload: number };
 
+export const getTasksInitialState = (): TaskState => {
+    return {
+        todos: [],
+        completed: 0,
+        pending: 0,
+        length: 0,
+    }
+}
+
 // always return a new state object
 // always return a state type
 export const tasksReducer = (
@@ -69,6 +78,7 @@ export const tasksReducer = (
             return {
                 ...state,
                 todos: updatedTodos,
+                length: updatedTodos.length,
                 completed: updatedTodos.filter(todo => todo.completed).length,
                 pending: updatedTodos.filter(todo => !todo.completed).length,
             }
