@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client'
 import { MemoHook } from './06-memos/MemoHook'
 import './index.css'
 import { MemoCounter } from './06-memos/MemoCounter'
+import { InstagromApp } from './07-useOptimistic/InstagromApp'
 // // import { FocusScreen } from './04-useRef/FocusScreen'
 // import { TasksApp } from './05-useReducer/TaskAp'
 // import { ScrambleWords } from './05-useReducer/ScrambleWords'
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
    {/* <TasksApp /> */}
    {/* <ScrambleWords /> */}
    {/* <MemoHook /> */}
-   <MemoCounter />
+   {/* <MemoCounter /> */}
+   <InstagromApp />
   </StrictMode>,
 )
