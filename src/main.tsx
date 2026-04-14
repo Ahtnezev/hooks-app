@@ -5,8 +5,9 @@ import { Toaster, toast } from 'sonner';
 // import { HooksApp } from './HooksApp'
 // import { MemoHook } from './06-memos/MemoHook'
 import './index.css'
+import { ClientInformation } from './08-use-suspense/ClientInformation';
 // import { MemoCounter } from './06-memos/MemoCounter'
-import { InstagromApp } from './07-useOptimistic/InstagromApp'
+// import { InstagromApp } from './07-useOptimistic/InstagromApp'
 // // import { FocusScreen } from './04-useRef/FocusScreen'
 // import { TasksApp } from './05-useReducer/TaskAp'
 // import { ScrambleWords } from './05-useReducer/ScrambleWords'
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')!).render(
    {/* <ScrambleWords /> */}
    {/* <MemoHook /> */}
    {/* <MemoCounter /> */}
-   <InstagromApp />
+   {/* <InstagromApp /> */}
+   <ClientInformation id={100} />
   </StrictMode>,
 )
