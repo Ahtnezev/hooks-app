@@ -1,7 +1,8 @@
 
 /**
+ * Tipos:
  * Data o Declarative -> SPA
- * Framework -> renderizado del lado del servidor (liviando)
+ * Framework -> renderizado del lado del servidor (liviano)
  * https://reactrouter.com/home
  */
 
