@@ -46,7 +46,6 @@ export const UserContextProvider: FC<PropsWithChildren> = ({ children }) => { //
     }
 
     const handleLogout = () => {
-        console.log('LOGOUT');
         setAuthStatus('not-authenticated');
         setUser(null);
         localStorage.removeItem('userId');
